@@ -10,8 +10,8 @@ LOGGED_IN_ACCOUNT = None
 def connect_db():
     return mysql.connector.connect(
         host="localhost",
-        user="Vrushali",
-        password="Vrushali@1220",
+        user="root",
+        password="root@123",
         database="bankdb"
     )
 
@@ -157,3 +157,4 @@ if logged_in_username:
     request_money_ui(logged_in_username)
 else:
     error_label.config(text="No logged-in username found!", fg="red")
+
