@@ -27,7 +27,7 @@ def open_transaction_history_window():
         hashed_tpin = hashlib.sha256(entered_tpin.encode()).hexdigest()
 
         try:
-            conn = mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220",
+            conn = mysql.connector.connect(host="localhost", user="root", password="root@123",
                                            database="bankdb")
             cursor = conn.cursor()
 
@@ -170,3 +170,4 @@ back_button = tk.Button(frame, text="⬅ Back", font=("Arial", 12), bg="gray", f
 back_button.pack(pady=5)
 
 root.mainloop()
+
