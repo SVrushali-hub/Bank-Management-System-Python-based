@@ -14,8 +14,8 @@ else:
 def connect_db():
     return mysql.connector.connect(
         host="localhost",
-        user="Vrushali",
-        password="Vrushali@1220",
+        user="root",
+        password="root@123",
         database="bankdb"
     )
 
@@ -185,3 +185,4 @@ exit_btn = tk.Button(root, text="Exit", font=("Arial", 12), bg="red", fg="white"
 exit_btn.pack(pady=10)
 
 root.mainloop()
+
