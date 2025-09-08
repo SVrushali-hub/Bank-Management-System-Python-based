@@ -24,7 +24,7 @@ def login_user():
         return
 
     try:
-        conn = mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220", database="bankdb")
+        conn = mysql.connector.connect(host="localhost", user="root", password="root@123", database="bankdb")
         cursor = conn.cursor()
         cursor.execute("SELECT pin FROM users WHERE BINARY username = %s", (username,))
         user = cursor.fetchone()
@@ -203,3 +203,4 @@ tk.Button(frame, text="Don't have an account? Register here!", font=("Arial", 10
 root.bind("<Configure>", resize_canvas)
 
 root.mainloop()
+
