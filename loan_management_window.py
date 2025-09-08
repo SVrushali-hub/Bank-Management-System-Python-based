@@ -8,8 +8,8 @@ from datetime import datetime  # Import datetime
 # MySQL Connection
 conn = mysql.connector.connect(
     host="localhost",
-    user="Vrushali",
-    password="Vrushali@1220",
+    user="root",
+    password="root@123",
     database="bankdb"
 )
 cursor = conn.cursor()
@@ -403,5 +403,6 @@ create_button("📊 Loan Payment History", lambda: create_window("Loan Payment H
 create_button("💰 Calculate Interest", lambda: create_window("Calculate Interest", calculate_interest), "#FF33A1")  # Pink
 create_button("🔄 Loan Repayment", lambda: create_window("Loan Repayment", open_loan_repayment), "#FFC300")  # Yellow
 create_button("📜 Loan History", lambda: create_window("Loan History", open_loan_history), "#FF8C00")  # Orange
+
 
 root.mainloop()
