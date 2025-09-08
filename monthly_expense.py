@@ -12,7 +12,7 @@ else:
 # Connect to MySQL and fetch the correct account number
 def get_account_number():
     try:
-        conn = mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220", database="bankdb")
+        conn = mysql.connector.connect(host="localhost", user="root", password="root@123", database="bankdb")
         cursor = conn.cursor()
         cursor.execute("SELECT account_number FROM users WHERE username = %s", (logged_in_username,))
         result = cursor.fetchone()
@@ -162,3 +162,4 @@ root.bind("<Configure>", lambda event: center_elements())
 root.after(100, center_elements)
 
 root.mainloop()
+
