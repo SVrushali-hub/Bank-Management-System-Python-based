@@ -15,7 +15,7 @@ def hash_pin(pin):
 
 # Function to connect to MySQL database
 def connect_db():
-    return mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220", database="bankdb")
+    return mysql.connector.connect(host="localhost", user="root", password="root@123", database="bankdb")
 
 # Function to fetch user's balance
 def check_balance():
@@ -85,3 +85,4 @@ balance_label = tk.Label(frame, text="", font=("Arial", 12, "bold"), bg="lavende
 balance_label.pack(pady=10)
 
 balance_root.mainloop()
+
