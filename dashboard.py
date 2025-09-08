@@ -31,7 +31,7 @@ def open_profile():
         return
 
     try:
-        conn = mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220", database="bankdb")
+        conn = mysql.connector.connect(host="localhost", user="root", password="root@123", database="bankdb")
         cursor = conn.cursor()
         cursor.execute("SELECT account_number, account_holder_name, username, email, gender, dob FROM users WHERE username = %s", (logged_in_username,))
         user_data = cursor.fetchone()
@@ -155,3 +155,4 @@ create_button("⚙️ Set TPIN", "orange", open_set_tpin)
 create_button("🔁 Other Services", "navy", open_money_request_window)
 
 root.mainloop()
+
