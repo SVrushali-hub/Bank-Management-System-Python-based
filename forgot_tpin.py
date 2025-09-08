@@ -8,7 +8,7 @@ def hash_pin(pin):
     return hashlib.sha256(pin.encode()).hexdigest()
 
 def connect_db():
-    return mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220", database="bankdb")
+    return mysql.connector.connect(host="localhost", user="root", password="root@123", database="bankdb")
 
 def reset_tpin():
     email = email_entry.get().strip()
@@ -62,3 +62,4 @@ tk.Button(reset_window, text="Reset TPIN", font=("Arial", 12), bg="blue", fg="wh
 
 
 reset_window.mainloop()
+
