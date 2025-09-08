@@ -44,7 +44,7 @@ def validate_email(event=None):
         return
 
     try:
-        conn = mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220", database="bankdb")
+        conn = mysql.connector.connect(host="localhost", user="root", password="root@123", database="bankdb")
         cursor = conn.cursor()
         cursor.execute("SELECT email FROM users WHERE email = %s", (email,))
         if cursor.fetchone():
@@ -234,3 +234,4 @@ success_label.pack()
 
 root.bind("<Configure>", resize_canvas)
 root.mainloop()
+
