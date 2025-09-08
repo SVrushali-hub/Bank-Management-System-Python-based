@@ -14,7 +14,7 @@ def hash_pin(pin):
 
 # Function to connect to MySQL database
 def connect_db():
-    return mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220", database="bankdb")
+    return mysql.connector.connect(host="localhost", user="root", password="root@123", database="bankdb")
 
 # Function to fetch the logged-in user's account details
 def get_user_details(logged_in_username):
@@ -199,3 +199,4 @@ tk.Button(frame, text="Transfer Money", font=("Arial", 12), bg="green", fg="whit
 tk.Button(frame, text="🔙 Back", font=("Arial", 12), bg="grey", fg="black", command=transfer_window.destroy).pack(pady=10)
 
 transfer_window.mainloop()
+
