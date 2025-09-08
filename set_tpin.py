@@ -10,8 +10,8 @@ from tkinter import Canvas
 def get_db_connection():
     return mysql.connector.connect(
         host="localhost",  # Host where MySQL is running
-        user="Vrushali",  # Your MySQL username
-        password="Vrushali@1220",  # Your MySQL password
+        user="root",  # Your MySQL username
+        password="root@123",  # Your MySQL password
         database="bankdb"  # Your database name
     )
 
@@ -207,3 +207,4 @@ verify_button = tk.Button(frame, text="Verify Email", font=("Arial", 14),bg='Pur
 
 # Start the Tkinter main loop
 root.mainloop()
+
