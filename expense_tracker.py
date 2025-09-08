@@ -25,7 +25,7 @@ if not logged_in_username:
 
 # Connect to MySQL
 def connect_db():
-    return mysql.connector.connect(host="localhost", user="Vrushali", password="Vrushali@1220", database="bankdb")
+    return mysql.connector.connect(host="localhost", user="root", password="root@123", database="bankdb")
 
 # Function to fetch the logged-in user's account number
 def get_logged_in_account():
@@ -148,3 +148,4 @@ root.resizable(True, True)
 fetch_expenses()
 
 root.mainloop()
+
